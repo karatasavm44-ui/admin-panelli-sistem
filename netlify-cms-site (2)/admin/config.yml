@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - label: "Site Ayarları"
+    name: "site"
+    files:
+      - label: "Genel"
+        name: "general"
+        file: "site.json"
+        fields:
+          - { label: "Marka Adı", name: "brand_name", widget: "string" }
+          - { label: "Slogan", name: "tagline", widget: "string" }
+          - { label: "WhatsApp Numarası (905XXXXXXXXX)", name: "wanumber", widget: "string" }
+
+  - label: "Ürünler"
+    name: "products"
+    files:
+      - label: "Ürün Listesi"
+        name: "list"
+        file: "products.json"
+        fields:
+          - label: "Ürünler"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Ürün Adı", name: "title", widget: "string" }
+              - { label: "SKU", name: "sku", widget: "string", required: false }
+              - { label: "Eski Fiyat", name: "price_old", widget: "number", required: false }
+              - { label: "Yeni Fiyat", name: "price_new", widget: "number" }
+              - { label: "Rozet", name: "badge", widget: "string", required: false }
+              - { label: "Görsel", name: "image", widget: "image" }

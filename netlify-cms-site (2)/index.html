@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Mağaza | Ürünler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="brand-logo">MK</div>
+        <div class="brand-name">
+          <strong id="brand-name">Marka Adı</strong><br>
+          <span id="brand-sub" class="brand-sub">81 ile kargo • Uygun fiyat, hızlı teslimat</span>
+        </div>
+      </div>
+      <nav aria-label="Ana menü">
+        <a href="#kategoriler">Kategoriler</a>
+        <a href="#coksatan">Çok Satanlar</a>
+        <a href="#iletisim">İletişim</a>
+        <a class="cta" id="hero-wa" href="#">WhatsApp ile Sipariş</a>
+      </nav>
+      <button class="hamb" aria-label="Menüyü aç/kapat" id="hamb">☰</button>
+    </div>
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="container drawer-inner">
+        <a href="#kategoriler" onclick="closeDrawer()">Kategoriler</a>
+        <a href="#coksatan" onclick="closeDrawer()">Çok Satanlar</a>
+        <a href="#iletisim" onclick="closeDrawer()">İletişim</a>
+        <a class="cta" id="mob-wa" href="#" onclick="closeDrawer()">WhatsApp ile Sipariş</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-wrap">
+        <div>
+          <span class="badge">Yeni sezon • Süper kampanya</span>
+          <h1>Bisiklet, Züccaciye, Tekstil ve Akülü Arabalarda Büyük İndirim!</h1>
+          <p>Fiyatlar <strong>3000 TL</strong>'den başlıyor. Türkiye'nin her yerine hızlı kargo. WhatsApp'tan anında sipariş ver, aynı gün kargoya verelim.</p>
+          <div class="hero-actions">
+            <a class="cta" href="#coksatan">Hemen İncele</a>
+            <a class="ghost" id="band-wa" href="#">WhatsApp ile Yaz</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/uploads/banner.jpg" alt="Kampanya Banneri" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="usp">
+        <div class="item"><div class="icon">81</div><div><strong>81 ile Kargo</strong><br><small>Tüm Türkiye'ye hızlı gönderim</small></div></div>
+        <div class="item"><div class="icon">₺</div><div><strong>Uygun Fiyat</strong><br><small>Toplu alım indirimi sorunuz</small></div></div>
+        <div class="item"><div class="icon">✓</div><div><strong>Güvenli Alışveriş</strong><br><small>Özenli paketleme, faturalı satış</small></div></div>
+        <div class="item"><div class="icon">⚡</div><div><strong>Hızlı Yanıt</strong><br><small>WhatsApp'tan anında dönüş</small></div></div>
+      </div>
+    </section>
+
+    <section id="kategoriler" class="container section">
+      <h2>Kategoriler</h2>
+      <div class="grid">
+        <a class="cat" href="#coksatan">
+          <img src="assets/uploads/bisiklet-kategori.jpg" alt="Bisiklet">
+          <div><strong>Bisiklet</strong><br><small>14"'ten 29"a tüm modeller</small></div>
+        </a>
+        <a class="cat" href="#coksatan">
+          <img src="assets/uploads/akulu-kategori.jpg" alt="Akülü Araba">
+          <div><strong>Akülü Araba</strong><br><small>Tekli & çift kişilik, uzaktan kumandalı</small></div>
+        </a>
+        <a class="cat" href="#coksatan">
+          <img src="assets/uploads/zuccaciye-kategori.jpg" alt="Züccaciye">
+          <div><strong>Züccaciye</strong><br><small>Setler, tencere, çelik ürünler</small></div>
+        </a>
+        <a class="cat" href="#coksatan">
+          <img src="assets/uploads/tekstil-kategori.jpg" alt="Tekstil">
+          <div><strong>Tekstil</strong><br><small>Ev & günlük kullanım</small></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="coksatan" class="container section products">
+      <h2>Çok Satanlar</h2>
+      <div class="grid" id="products-grid">
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="cta-band">
+        <h3 style="margin:0">Sorun mu var? Ürün bulamadın mı?</h3>
+        <p style="margin:0">Mesaj at, sana özel fiyat ve stok bilgisi paylaşalım.</p>
+        <a id="wa-float" class="btn" href="#">WhatsApp'tan Yaz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="iletisim">
+    <div class="container foot">
+      <div>
+        <h4 id="brand-foot">Marka Adı</h4>
+        <p>Uygun fiyatlı ürünler. 81 ile kargo. WhatsApp ile hızlı sipariş.</p>
+      </div>
+      <div>
+        <h4>İletişim</h4>
+        <p>WhatsApp: <a id="wa-inline" href="#">0 (534) 518 39 44</a><br>
+        Instagram: <a href="#" target="_blank" rel="noopener">@kullaniciadi</a><br>
+        Adres: İstanbul, Türkiye</p>
+      </div>
+      <div>
+        <h4>Bağlantılar</h4>
+        <p><a href="#kategoriler">Kategoriler</a><br>
+        <a href="#coksatan">Çok Satanlar</a><br>
+        <a href="#iletisim">İletişim</a></p>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="yil"></span> <span id="brand-copy">Marka Adı</span>. Tüm hakları saklıdır.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
